@@ -7,7 +7,7 @@ import connection from './db/connection.js';
 const app = express();
 app.use(express.json());
 app.use(cors());
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 //mongoDB connection
 
