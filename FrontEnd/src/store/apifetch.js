@@ -6,7 +6,9 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 // Define a service using a base URL and expected endpoints
 export const apiSlice = createApi({
   //   reducerPath: 'pokemonApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5000' }),
+  baseQuery: fetchBaseQuery({
+    baseUrl: 'https://expenseapp-backend.herokuapp.com/',
+  }),
   endpoints: (builder) => ({
     getCategories: builder.query({
       // get resquest by default and the data will be store inside the getCategories function
